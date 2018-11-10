@@ -1,0 +1,18 @@
+#
+# Syntax Coloring Map For TDMotor
+#
+
+#
+# Datatypes (KEYWORD1)
+#
+
+DCMotorDriver	     KEYWORD1
+
+#
+# Methods and Functions (KEYWORD2)
+#
+
+Speed	 KEYWORD2
+Forward	     KEYWORD2
+Backward	     KEYWORD2
+Stop	     KEYWORD2

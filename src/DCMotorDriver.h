@@ -1,3 +1,14 @@
+/*
+ * Biblioteca DCMotorDriver
+ * 
+ * Autora: Ana Paula Messina - anapaula@tecdicas.com
+ * https://www.tecdicas.com/
+ * 
+ * 10/11/2018
+ * 
+ * MIT
+ */
+ 
 #ifndef DCMotorDriver_h
 #define DCMotorDriver_h
 

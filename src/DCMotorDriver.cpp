@@ -1,3 +1,14 @@
+/*
+ * Biblioteca DCMotorDriver
+ * 
+ * Autora: Ana Paula Messina - anapaula@tecdicas.com
+ * https://www.tecdicas.com/
+ * 
+ * 10/11/2018
+ * 
+ * MIT
+ */
+
 #include "DCMotorDriver.h"
 
 DCMotorDriver::DCMotorDriver(uint8_t enable, uint8_t input1, uint8_t input2)

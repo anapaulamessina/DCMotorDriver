@@ -1,6 +1,6 @@
 # Biblioteca DCMotorDriver
 
-Controle para motores DC utilizando a plataforma Arduino.
+Controle para motores DC utilizando as plataformas Arduino e NodeMCU.
 
 ## Incluindo na IDE Arduino
 Para adicionar esta biblioteca na IDE oficial do Arduino, faça o download do arquivo .ZIP deste repositório. Abra a IDE e na aba ***Sketch > Incluir Biblioteca > Adicionar Biblioteca .ZIP*** 
@@ -12,10 +12,10 @@ Adicione o header `<DCMotorDriver.h>` em seu Sketch e instancie a classe chamand
 
 ## Lista de métodos
 
-    DCMotorDriver(uint8_t enable, uint8_t input1, uint8_t input2) : Construtor da classe.
-	void Speed(uint8_t speedPwm) : Define a velocidade do motor.
-	void Forward(uint8_t speed = 0) : Define a direção do motor para Forward, a velocidade é opcional.
-	void Backward(uint8_t speed = 0) : Define a direção do motor para Backward, a velocidade é opcional.
+    DCMotorDriver(int enable, int input1, int input2) : Construtor da classe.
+	void Speed(int speedPwm) : Define a velocidade do motor.
+	void Forward(int speed /*=0*/) : Define a direção do motor para Forward, a velocidade é opcional.
+	void Backward(int speed /*=0*/) : Define a direção do motor para Backward, a velocidade é opcional.
 	void Stop() : Para o motor.
 
 ## Exemplos

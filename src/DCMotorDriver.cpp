@@ -11,7 +11,7 @@
 
 #include "DCMotorDriver.h"
 
-DCMotorDriver::DCMotorDriver(uint8_t enable, uint8_t input1, uint8_t input2)
+DCMotorDriver::DCMotorDriver(int enable, int input1, int input2)
 {
 	_en = enable;
 	_in1 = input1;
@@ -23,12 +23,12 @@ DCMotorDriver::DCMotorDriver(uint8_t enable, uint8_t input1, uint8_t input2)
 	pinMode(input2, OUTPUT); 
 }
 
-void DCMotorDriver::Speed(uint8_t speedPwm)
+void DCMotorDriver::Speed(int speedPwm)
 {
 	_speedPwm = speedPwm;
 }
 
-void DCMotorDriver::Move(uint8_t direction, uint8_t speed = 0 )
+void DCMotorDriver::Move(int direction, int speed /*=0*/ )
 {
 	if (speed != 0) _speedPwm = speed;
 	
@@ -55,12 +55,12 @@ void DCMotorDriver::Move(uint8_t direction, uint8_t speed = 0 )
 	}
 }
 
-void DCMotorDriver::Forward(uint8_t speed = 0)
+void DCMotorDriver::Forward(int speed /*=0*/)
 {
 	this->Move(1, speed);
 }
 
-void DCMotorDriver::Backward(uint8_t speed = 0)
+void DCMotorDriver::Backward(int speed /*=0*/)
 {
 	this->Move(2,speed);
 }
